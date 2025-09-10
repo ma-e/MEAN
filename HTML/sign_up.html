@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adjust with all devices -->
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign_up.css"> <!-- External CSS only -->
+</head>
+<body>
+    <main class="signup-container">
+        <h1>Sign Up</h1>
+        <form action="#" method="post">
+            <div class="row">
+                <input type="text" name="first_name" placeholder="First Name" required>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+            </div>
+            <div class="row">
+                <input type="tel" name="mobile" placeholder="Mobile No." required>
+            </div>
+            <div class="row">
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="row">
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            </div>
+            <div class="row checkbox-row">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">I Agree</label>
+            </div>
+            <div class="row terms">
+                <p>By clicking <strong>Register</strong>, you agree to the 
+                    <a href="#">Terms and Conditions</a> set out by this site, including our Cookie Use.
+                </p>
+            </div>
+            <div class="row buttons">
+                <button type="submit" class="register-btn">Register</button>
+                <button type="button" class="signin-btn">Sign In</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
