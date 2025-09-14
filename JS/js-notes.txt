@@ -1,0 +1,42 @@
+Good naming convention:
+
+1. Use camelCase for variables and functions
+Start with a lowercase letter, capitalize subsequent words.
+let userName = "Alice";
+function reverseNumber(num) { ... }
+
+2. Use PascalCase for classes and constructors
+Every word starts with a capital letter.
+class UserProfile { ... }
+const user = new UserProfile();
+
+3. Constants
+All uppercase with underscores for constants that don’t change.
+const MAX_USERS = 100;
+
+4. Booleans
+Name boolean variables so they read like true/false questions.
+let isLoggedIn = true;
+let hasPermission = false;
+
+5. Descriptive and meaningful
+Avoid vague names like x or data unless in a tiny scope.
+let reversedNumber = reverseNumber(12345); // good
+let x = 12345;                             // bad
+
+6. Avoid abbreviations
+Only abbreviate well-known terms.
+let htmlElement = document.getElementById("app"); // better than let el
+
+7. Functions
+Use verbs for function names — they indicate actions.
+function calculateSum(a, b) { ... }
+function fetchUserData() { ... }
+
+8. Avoid reserved words
+Don’t use JavaScript keywords like class, var, function as names.
+
+9. Consistency
+Pick a style and stick with it across your codebase. Mixing camelCase and snake_case is confusing.
+
+
