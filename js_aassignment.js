@@ -2,16 +2,20 @@
 // Name: E Ma
 // Date: 09/14/2025
 
+// what cases should I use for a function in JS? 
+
 // 1. Write a JavaScript function that reverse a number. 
 // Example x = 32243;
 // Expected Output: 34223 
 
-function Reverse(num)
-{
-    reusult = ''
-    for i in nums{
 
+function reverseNum(num)
+{
+    for 
+    for i in nums{
+        res += i
     }
+    return res
 }
 
 
