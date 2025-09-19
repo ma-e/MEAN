@@ -1,32 +1,76 @@
+:root { --block-size: 200px; }
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+
+/* top right */
+.timer {
+  position: fixed;
+  top: 12px;
+  right: 16px;
+  padding: 8px 12px;
+  font-weight: bold; 
+}
+
 /* Header centered */
 header {
-    display: flex;
-    gap: 24px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 24px;
-  }
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-direction: column;  /* stack vertically */
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.title { 
+    font-size: 28px; 
+    font-weight: 700; 
+}
 
 .score {
-    padding: 8px 12px;
-    border-radius: 8px;
-  }
-
-/* Top right */
-.timer {
-    position: fixed;
-    top: 12px;
-    right: 16px;
-    /* background: #fff; */
-    padding: 8px 12px;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0,0,0,.08);
-    font-weight: 600;
-  }
-
-/* Board wrapper centered */
-.board-wrap {
-    width: calc(4 * var(--block-size) + 4 * 12px);
-    display: flex;
-    justify-content: center;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: bold; 
 }
+
+.board-wrap {
+  width: calc(4 * var(--block-size) + 4 * 12px);
+  display: flex;
+  justify-content: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, var(--block-size));
+}
+
+.cell {
+  width: var(--block-size);
+  height: var(--block-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hole {
+  width: 80%;
+  height: 80%;
+  border: 2px solid brown;
+  border-radius: 50%;
+}
+.character {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.visible { visibility: visible; }
