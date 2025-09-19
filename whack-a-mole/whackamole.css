@@ -1,0 +1,32 @@
+/* Header centered */
+header {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+.score {
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+
+/* Top right */
+.timer {
+    position: fixed;
+    top: 12px;
+    right: 16px;
+    /* background: #fff; */
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.08);
+    font-weight: 600;
+  }
+
+/* Board wrapper centered */
+.board-wrap {
+    width: calc(4 * var(--block-size) + 4 * 12px);
+    display: flex;
+    justify-content: center;
+}
