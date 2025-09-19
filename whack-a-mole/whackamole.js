@@ -1,4 +1,4 @@
-// ----- Model -----
+// Model
 const Model = (function () {
     const state = {
       cells: [], // generate an Array of objects which used to track the state of the game board status
@@ -24,7 +24,7 @@ const Model = (function () {
     }
   })()
   
-  // View
+// View
 const View = (function () {
 const board = document.getElementById('board')
 const scoreEl = document.getElementById('score')
@@ -88,7 +88,7 @@ return {
 }
 })()
   
-//   Controller
+//     Controller
 const Controller = (function (Model, View) {
 function startGame() {
     stopAll()
