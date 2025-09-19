@@ -97,8 +97,7 @@ function startGame() {
     View.updateScore(Model.state.score)
     View.updateTimer(Model.state.time)
 
-    // every 1 second, it should create a mole inside one random block on the board 
-    // Spawn moles - 
+    // Spawn moles - every 1 second, it should create a mole inside one random block on the board 
     Model.state.timers.moles = setInterval(spawnMole, 1000)
     // Spawn snakes
     Model.state.timers.snakes = setInterval(spawnSnake, 2000)
