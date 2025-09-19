@@ -17,7 +17,7 @@ body {
   font-weight: bold; 
 }
 
-/* Header centered */
+/* header centered */
 header {
   display: flex;
   gap: 24px;
@@ -64,13 +64,14 @@ header {
   border: 2px solid brown;
   border-radius: 50%;
 }
+
 .character {
   position: absolute;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  visibility: hidden;
+  visibility: hidden;  /* When player click on one of the moles on the game board, it should be disappear */
 }
 
 .visible { visibility: visible; }
